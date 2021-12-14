@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveDomain" Version="0.8.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EventStore.ClientAPI">
+      <HintPath>..\..\..\EventStore-OSS-Win-v3.6.2\EventStore.ClientAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Core">
+      <HintPath>..\..\packages\reactivedomain.core\0.8.18\lib\net472\ReactiveDomain.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Messaging">
+      <HintPath>..\..\packages\reactivedomain.messaging\0.8.18\lib\net472\ReactiveDomain.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Persistence">
+      <HintPath>..\..\packages\reactivedomain.persistence\0.8.18\lib\net472\ReactiveDomain.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

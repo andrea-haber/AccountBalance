@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net471</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AccountTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveDomain" Version="0.8.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EventStore.ClientAPI">
+      <HintPath>..\..\..\EventStore-OSS-Win-v3.6.2\EventStore.ClientAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\repos\Greylock2\Greylock\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Core">
+      <HintPath>..\..\packages\reactivedomain.core\0.8.18\lib\net452\ReactiveDomain.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Foundation">
+      <HintPath>..\..\packages\reactivedomain.foundation\0.8.18\lib\net452\ReactiveDomain.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Messaging">
+      <HintPath>..\..\packages\reactivedomain.messaging\0.8.18\lib\net452\ReactiveDomain.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Persistence">
+      <HintPath>..\..\packages\reactivedomain.persistence\0.8.18\lib\net452\ReactiveDomain.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveDomain.Testing">
+      <HintPath>..\..\packages\reactivedomain.testing\0.8.18\lib\net452\ReactiveDomain.Testing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
